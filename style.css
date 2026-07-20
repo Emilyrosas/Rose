@@ -3,6 +3,8 @@
 body{
     color: rgb(228, 115, 115);
     margin: 0;
+    padding: 0;
+z-index: 1;
 }
 
 .ti{background-color: transparent;
@@ -10,7 +12,6 @@ margin-right: 50px;
 color: rgb(228, 115, 115);
 text-decoration: none;
 font-size: 40px;
-
 }
 
 
@@ -79,7 +80,7 @@ video{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -2;
+   
 }
 
 .capa{
@@ -104,10 +105,29 @@ video{
 .cont{
     height: 100vh;
     justify-content: center;
-    padding-top: 50vh;
-    text-align: justify;
+   padding: 20px;
 
     
 }
 
 
+.row{
+    display: flex;
+    padding: 5px;
+}
+
+
+.column{
+    flex: 75%;
+    padding: 10px;
+}
+
+.column img{
+margin-top: 5px;
+}
+
+@media (max-width:600px){
+    .column{
+        flex: 125%
+    }
+}
